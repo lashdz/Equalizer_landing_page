@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-image: url(./assets/bg-main-mobile.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding: 0px 24px 0px 24px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header img {
+    width: 146px;
+    height: 32px;
+    margin-top: 40px;
+}
+
+.tabletmode_img {
+    display: none;
+}
+
+h1 {
+    width: 327px;
+    height: 144px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.45px;
+    color: #191826;
+    margin-bottom: 20px;
+    margin-top: 64px;
+}
+
+header p {
+    width: 327px;
+    height: 158px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+    margin-bottom: 166px;
+}
+
+section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 375px;
+    height: 600px;
+    border-radius: 12px;
+    background-color: black;
+    margin-bottom: 390px;
+}
+
+.img_decoration { 
+    display: flex;
+   position: absolute;
+   width: 280px;
+   height: 420px;
+}
+
+.img_mobile {
+    display: flex;
+    position: absolute;
+    top: -98px;
+    width: 209px;
+    height: 430px;
+    z-index: 1;
+}
+
+.order {
+    display: flex;
+   position: absolute;
+   flex-direction: column;
+   top: 380px;
+   width: 375px;
+   height: 546px;
+   box-sizing: border-box;
+   z-index: 1;
+   background-color: #FA7453;
+   padding-top: 48px;
+   padding-bottom: 48px;
+   border-radius: 12px;
+}
+
+h2 {
+    width: 302px;
+    height: 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FCFAF9;
+    margin-left: 36px;
+}
+
+.order_p {
+    width: 302px;
+    height: 140px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FCFAF9;
+    margin-top: 12px;
+    margin-bottom: 36px;
+    margin-left: 36px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: row;
+    width: 302px;
+    height: 52px;
+    margin-left: 42px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    width: 79px;
+    height: 52px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    color: #FCFAF9;
+    margin-right: 16px;
+}
+
+h4 {
+    display: flex;
+    align-items: center;
+    width: 79px;
+    height: 52px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: #FCFAF9;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 296px;
+    height: 61px;
+    border-radius: 12px;
+    border: 0px;
+    margin-left: 42px;
+}
+
+.ios_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191826;
+    margin-bottom: 16px;
+    color: #FCFAF9;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    gap: 8px;
+}
+
+.android_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFAF9;
+    color: #191826;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    gap: 8px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px 0px 24px;
+    box-sizing: border-box;
+}
+
+footer img {
+    width: 146px;
+    height: 32px;
+}
+
+footer p {
+    width: 327px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    width: 327px;
+    margin-bottom: 80px;
+}
+.icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* tablet mode */
+@media screen and (min-width:768px) {
+main {
+    width: 768px;
+}
+
+header {
+    height: 720px;
+    background-image: url(./assets/bg-main-tablet.png);
+    background-size: 1150px 950px;
+    background-position:bottom -50px right -80px;
+
+}
+
+header img {
+    margin-top: 62px;
+    margin-left: 39px;
+}
+
+h1 {
+    width: 520px;
+    height: 192px;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.73px;
+    margin-top: 95px;
+    margin-left: 39px;
+    margin-bottom: 28px;
+}
+
+header p {
+    width: 514px;
+    height: 112px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 39px;
+}
+
+.tabletmode_img {
+    display: flex;
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    width: 277px;
+    height: 400px;
+    margin: 0px;
+}
+
+section {
+    width: 696px;
+    height: 600px;
+    margin-left: 33px;
+    margin-right: 39px;
+    margin-bottom: 183px;   
+}
+
+.img_mobile {
+    width: 270px;
+    height: 556px;
+    top: -138px;
+    left: 64px;
+}
+
+.img_decoration {
+    width: 280px;
+    height: 420px;
+    right: 187px;
+    top: -20px;
+}
+
+.order {
+    width: 399px;
+    height: 546px;
+    right: 58px;
+    top: 150px;
+}
+
+footer p {
+    width: 375px;
+}
+}
+
+/* desktop mode */
+@media screen and (min-width:1440px) {
+
+main {
+    width: 100%;
+    padding: 62px  165px 91px 165px;
+    box-sizing: border-box;
+    background-image: url(./assets/bg-main-desktop.png);
+    background-position: top -190px right -200px;
+}
+
+.tabletmode_img {
+    width: 312px;
+    height: 468px;
+    top: -110px;
+    right: -165px;
+}
+
+header {
+    height: auto;
+    padding: 0px;
+    overflow-x: visible;
+    background-image: none;
+}
+
+header img {
+    margin: 0px;
+}
+
+h1 {
+    margin: 127px 0px 40px 0px;
+    width: 1015px;
+    height: 176px;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+}
+
+header p {
+    margin: 0px 0px 321px 0px;
+    width: 825px;
+    height: 102px;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+section {
+    margin: 0px 0px 202px 0px;
+    width: 1110px;
+    height: 600px;
+}
+
+.img_mobile {
+    width: 312px;
+    height: 642px;
+    top:-213px;
+    right: 118px;
+}
+
+.img_decoration {
+    width: 312px;
+    height: 468px;
+    left: 297px;
+}
+
+.order {
+    width: 446px;
+    height: 625px;
+    top: 115px;
+    right: 130px;
+}
+
+h2 {
+    width: 333px;
+    height: 52px;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.order_p {
+    width: 333px;
+    height: 170px;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+button {
+    margin-left: 75px;
+}
+
+.ios_button:hover {
+    cursor: pointer;
+    background-color: #66E2DC;
+}
+
+.android_button:hover {
+    cursor: pointer;
+    background-color: #FFB964;
+}
+
+.icons:hover img{
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 0px;
+}
+
+.icons {
+    margin: 0px;
+    align-items: center;
+    justify-content: flex-end;
+}
+}
